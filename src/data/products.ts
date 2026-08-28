@@ -69,5 +69,5 @@ export const formatNaira = (value: number) =>
 
 export const orderLink = (product: Product, phone = WHATSAPP_PRIMARY) =>
   `https://wa.me/${phone}?text=${encodeURIComponent(
-    `Hello Maison de L'Élégance, I would like to order the ${product.name} (${product.collection}) — ${formatNaira(product.price)}. Please share availability and bespoke sizing details.`,
+    `Hello Tonif-trend.ng, I would like to order the ${product.name} (${product.collection}) — ${formatNaira(product.price)}. Please share availability and bespoke sizing details.`,
   )}`;

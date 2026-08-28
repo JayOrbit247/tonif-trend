@@ -15,7 +15,7 @@ import {
   products,
 } from "@/data/products";
 
-const title = "Maison de L'Élégance — Bespoke High Fashion Atelier, Lagos";
+const title = "Tonif-trend.ng — Setting Up Trending Standard | Lagos Atelier";
 const description =
   "Luxury bespoke couture, hand-dyed adire and tailored agbada crafted in Agbelekale, Abule-Egba, Lagos. Order any design via WhatsApp with worldwide shipping.";
 
@@ -44,15 +44,15 @@ function Index() {
         <section className="relative">
           <img
             src={heroImage}
-            alt="Two models in ivory and gold couture gowns from the Maison de L'Élégance atelier"
+            alt="Two models in ivory and gold couture gowns from the Tonif-trend.ng atelier"
             width={1920}
             height={1088}
             className="h-[62vh] min-h-[420px] w-full object-cover object-top md:h-[78vh]"
           />
-          <div className="absolute inset-0 bg-ink/25" />
+          <div className="absolute inset-0 bg-ink/45" />
           <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
             <p className="eyebrow text-primary-foreground/85">
-              Autumn Couture — Lagos, Nigeria
+              Setting up trending standard — Lagos, Nigeria
             </p>
             <h1 className="mt-4 font-display text-5xl tracking-[0.16em] text-primary-foreground sm:text-6xl md:text-7xl">
               EXPLORE YOUR STYLE
@@ -94,7 +94,7 @@ function Index() {
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
             <img
               src={dyeLabImage}
-              alt="Artisan hand-dyeing indigo silk in the Maison de L'Élégance dye lab"
+              alt="Artisan hand-dyeing indigo silk in the Tonif-trend.ng dye lab"
               width={1408}
               height={1008}
               loading="lazy"
@@ -117,7 +117,7 @@ function Index() {
               </p>
               <a
                 href={`https://wa.me/${WHATSAPP_SECONDARY}?text=${encodeURIComponent(
-                  "Hello Maison de L'Élégance, I would like to discuss a bespoke commission from the Dye Lab.",
+                  "Hello Tonif-trend.ng, I would like to discuss a bespoke commission from the Dye Lab.",
                 )}`}
                 target="_blank"
                 rel="noreferrer noopener"
@@ -130,12 +130,12 @@ function Index() {
         </section>
 
         <section id="about" className="mx-auto max-w-3xl px-6 py-20 text-center md:py-28">
-          <p className="eyebrow text-gold-deep">About the Maison</p>
+          <p className="eyebrow text-gold-deep">About the Brand</p>
           <h2 className="mt-4 font-display text-3xl tracking-wide text-foreground sm:text-4xl">
             A Lagos atelier dressing a global clientele
           </h2>
           <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-            Maison de L'Élégance was founded on a simple belief: couture made in
+            Tonif-trend.ng was founded on a simple belief: couture made in
             Nigeria belongs on the world's most demanding stages. From our
             workroom in Abule-Egba, our cutters, beaders and dyers build garments
             to measure, then ship them worldwide in bespoke garment cases.
@@ -147,9 +147,9 @@ function Index() {
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-3">
           <div>
             <h2 className="font-display text-2xl tracking-[0.12em]">
-              MAISON DE L'ÉLÉGANCE
+              TONIF-TREND.NG
             </h2>
-            <p className="eyebrow mt-3 text-gold">High Fashion Atelier</p>
+            <p className="eyebrow mt-3 text-gold">Setting up trending standard</p>
             <p className="mt-6 text-sm leading-relaxed text-primary-foreground/70">
               Bespoke couture, hand-dyed textiles and tailored ceremonial wear.
               Worldwide shipping available.
@@ -199,7 +199,7 @@ function Index() {
 
         <div className="border-t border-primary-foreground/15">
           <p className="mx-auto max-w-7xl px-6 py-6 text-center text-[0.625rem] uppercase tracking-[0.2em] text-primary-foreground/50">
-            © {new Date().getFullYear()} Maison de L'Élégance — Lagos State, Nigeria
+            © {new Date().getFullYear()} Tonif-trend.ng — Lagos State, Nigeria
           </p>
         </div>
       </footer>

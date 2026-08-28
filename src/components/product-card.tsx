@@ -34,7 +34,7 @@ export function ProductCard({
           target="_blank"
           rel="noreferrer noopener"
           onClick={onOrder}
-          className="mt-5 w-full bg-primary px-6 py-3.5 text-primary-foreground transition-colors hover:bg-gold-deep"
+          className="mt-5 w-full bg-primary px-6 py-3.5 text-primary-foreground transition-colors hover:bg-gold hover:text-accent-foreground"
         >
           <span className="eyebrow">Order via WhatsApp</span>
         </a>
