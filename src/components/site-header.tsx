@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Search, ShoppingBag, Instagram, Phone, Mail } from "lucide-react";
 import { PHONE_PRIMARY } from "@/data/products";
+import logoAsset from "@/assets/tonif-logo.png.asset.json";
 
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Shop Collection", href: "#collection" },
-  { label: "Dye Lab / Atelier", href: "#atelier" },
+  { label: "Atelier", href: "#atelier" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
@@ -17,7 +18,7 @@ export function SiteHeader({ bagCount }: { bagCount: number }) {
     <header id="home">
       <div className="bg-ink text-primary-foreground">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-1 px-6 py-2.5 text-center sm:flex-row sm:justify-between">
-          <p className="eyebrow text-[0.625rem] opacity-90">
+          <p className="eyebrow text-[0.625rem] text-gold">
             Worldwide Shipping Available • Bespoke High Fashion
           </p>
           <div className="flex items-center gap-5 text-[0.625rem] uppercase tracking-[0.2em] opacity-90">
@@ -37,14 +38,23 @@ export function SiteHeader({ bagCount }: { bagCount: number }) {
         </div>
       </div>
 
-      <div className="border-b border-border bg-card">
+      <div className="border-b border-gold/30 bg-ink">
         <div className="mx-auto max-w-7xl px-6 py-7">
           <div className="flex flex-col items-center gap-5">
-            <a href="#home" className="text-center">
-              <span className="block font-display text-3xl leading-none tracking-[0.12em] text-foreground sm:text-4xl">
-                MAISON DE L'ÉLÉGANCE
+            <a href="#home" className="flex flex-col items-center text-center">
+              <img
+                src={logoAsset.url}
+                alt="Tonif-trend.ng gold Tt monogram logo"
+                width={96}
+                height={96}
+                className="size-20 object-contain sm:size-24"
+              />
+              <span className="mt-3 block font-display text-3xl leading-none tracking-[0.12em] text-primary-foreground sm:text-4xl">
+                TONIF-TREND.NG
               </span>
-              <span className="eyebrow mt-2 block text-gold-deep">High Fashion Atelier</span>
+              <span className="eyebrow mt-2 block text-gold">
+                Setting up trending standard
+              </span>
             </a>
 
             <div className="flex w-full flex-col items-center gap-5 lg:flex-row lg:justify-between">
@@ -54,7 +64,7 @@ export function SiteHeader({ bagCount }: { bagCount: number }) {
                     <li key={link.label}>
                       <a
                         href={link.href}
-                        className="eyebrow text-muted-foreground transition-colors hover:text-foreground"
+                        className="eyebrow text-primary-foreground/70 transition-colors hover:text-gold"
                       >
                         {link.label}
                       </a>
@@ -64,19 +74,19 @@ export function SiteHeader({ bagCount }: { bagCount: number }) {
               </nav>
 
               <div className="order-1 flex items-center gap-3 lg:order-2">
-                <label className="flex items-center gap-2 border border-input px-3 py-2">
-                  <Search className="size-3.5 text-muted-foreground" strokeWidth={1.25} />
+                <label className="flex items-center gap-2 border border-primary-foreground/25 px-3 py-2">
+                  <Search className="size-3.5 text-gold" strokeWidth={1.25} />
                   <input
                     value={query}
                     onChange={(event) => setQuery(event.target.value)}
                     placeholder="Search the maison"
                     aria-label="Search the maison"
-                    className="w-40 bg-transparent text-xs tracking-[0.12em] uppercase outline-none placeholder:text-muted-foreground"
+                    className="w-40 bg-transparent text-xs uppercase tracking-[0.12em] text-primary-foreground outline-none placeholder:text-primary-foreground/45"
                   />
                 </label>
                 <button
                   type="button"
-                  className="flex items-center gap-2 border border-gold px-4 py-2.5 text-gold-deep transition-colors hover:bg-gold hover:text-accent-foreground"
+                  className="flex items-center gap-2 border border-gold px-4 py-2.5 text-gold transition-colors hover:bg-gold hover:text-accent-foreground"
                 >
                   <ShoppingBag className="size-3.5" strokeWidth={1.25} />
                   <span className="eyebrow">Bag ({bagCount})</span>
