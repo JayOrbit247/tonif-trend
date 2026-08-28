@@ -79,8 +79,8 @@ export function SiteHeader({ bagCount }: { bagCount: number }) {
                   <input
                     value={query}
                     onChange={(event) => setQuery(event.target.value)}
-                    placeholder="Search the maison"
-                    aria-label="Search the maison"
+                    placeholder="Search Tonif-trend"
+                    aria-label="Search Tonif-trend"
                     className="w-40 bg-transparent text-xs uppercase tracking-[0.12em] text-primary-foreground outline-none placeholder:text-primary-foreground/45"
                   />
                 </label>
@@ -99,7 +99,7 @@ export function SiteHeader({ bagCount }: { bagCount: number }) {
 
       <div className="bg-sand">
         <p className="mx-auto max-w-7xl px-6 py-3 text-center font-display text-base italic text-secondary-foreground sm:text-lg">
-          Explore our luxury bespoke collections crafted in Lagos State.
+          Setting up trending standard — bespoke luxury crafted in Lagos State.
         </p>
       </div>
     </header>
