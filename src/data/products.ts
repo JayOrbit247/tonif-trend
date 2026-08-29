@@ -5,10 +5,10 @@ import product4 from "@/assets/product-4.jpg";
 import product5 from "@/assets/product-5.jpg";
 import product6 from "@/assets/product-6.jpg";
 
-export const WHATSAPP_PRIMARY = "23481650559961";
+export const WHATSAPP_PRIMARY = "2348165059961";
 export const WHATSAPP_SECONDARY = "2348101581209";
 
-export const PHONE_PRIMARY = "081650559961";
+export const PHONE_PRIMARY = "08165059961";
 export const PHONE_SECONDARY = "08101581209";
 
 export type Product = {
